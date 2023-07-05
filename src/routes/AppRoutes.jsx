@@ -7,7 +7,7 @@ import AppLayout from "./../pages/AppLayout";
 import Reports from "../pages/services-reports/Reports.jsx";
 import Indicators from "../pages/indicators/Indicators.jsx";
 import ServicesCatalog from "../pages/ServicesCatalog.jsx";
-import Reportsd from "../pages/services-reports/reportsd.jsx";
+import Reportsd from "../pages/services-reports/Reportsd.jsx";
 
 const AppRoutes = () => {
   return (
