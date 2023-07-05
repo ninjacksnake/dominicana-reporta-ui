@@ -9,11 +9,13 @@ import semafo  from '../assets/semarfort.png'
 import road  from '../assets/road.png'
 import trash  from '../assets/trash.png'
 import faucet  from '../assets/llaveDeAgua.png'
+import { useNavigate } from "react-router-dom";
 
 
 
 const ListComp = ({ data }) => {
   const [initLoading, setInitLoading] = useState(false);
+  const navigate = useNavigate();
 const servicePicture = {
   car,
   accident,
@@ -37,7 +39,7 @@ const servicePicture = {
            
             <List.Item.Meta
               avatar={<Avatar src={servicePicture[item.picture]} size={50} /> }
-              title={<a href={item.link}>{item.name}</a>}
+              title={<p onClick={()=> navigate(item.link)}><strong>{item.name}</strong></p>}
               description="Ant Design, a design language for background applications, is refined by Ant UED Team"
            
             />
