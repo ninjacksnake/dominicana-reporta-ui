@@ -1,0 +1,56 @@
+.register-form {
+}
+.register-form-forgot {
+  float: right;
+}
+.ant-col-rtl .register-form-forgot {
+  float: left;
+}
+.register-form-button {
+  width: 100%;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  height: 100vh
+}
+
+.form-container {
+  width: 400px;;
+  border: 1px solid black;
+  padding: 3%;
+  border-radius: 20px;
+}
+.logo-container{display: flex;
+    justify-content: center;
+}
+.social-buttons{
+    display: flex;
+justify-content: center;
+ width: 100%;
+ gap: 20px;
+}
+.tweeter-button{
+    
+    width: 40%;
+    height: 50px;
+    background-color: rgb(17, 146, 221);
+    color: white !important;
+}
+.facebook-button{
+    width: 40%;
+    height: 50px;
+    background-color: rgb(23, 23, 93);
+    color: white !important;
+}
+
+
+
+@media (max-width: 600px){
+    .register-container{
+        width: 90%;
+    }
+}

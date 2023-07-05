@@ -1,0 +1,21 @@
+.line-chart-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+  
+
+.bar-chart-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.pie-chart-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}

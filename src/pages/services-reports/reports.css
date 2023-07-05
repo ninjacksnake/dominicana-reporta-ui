@@ -1,0 +1,21 @@
+.reports-container {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    min-width: 412px;
+}
+
+.header-container{
+    display: block;
+    /* text-align: center; */
+  justify-content: center;;
+}
+
+.map-container{
+    display: block;
+}
+
+.report-form-container{
+    padding:20px;
+
+}

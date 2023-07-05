@@ -1,0 +1,31 @@
+.demo-logo-vertical {
+}
+.content-container {
+  margin: 24px 16px;
+  padding: 24;
+  min-height: 280;
+  overflow: auto;
+
+}
+
+/* Width and Height of the scrollbar track */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+
+/* Background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Color of the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* On hover, color of the scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
