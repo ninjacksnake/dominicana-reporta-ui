@@ -23,7 +23,7 @@ const user = {
 };
 
 const AppLayout = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const navigate = useNavigate();
   const items1 = [
     {
@@ -88,7 +88,7 @@ const AppLayout = () => {
   } = theme.useToken();
   return (
     <Layout style={{ height: "100vh" }}>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
+      <Sider trigger={null} collapsible collapsed={collapsed} >
         <UserProfileBox />
         <div className="demo-logo-vertical" />
         <Menu
