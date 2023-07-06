@@ -19,8 +19,8 @@ const AppRoutes = () => {
         <Route path="servicios" element={<ServicesCatalog />} />
         <Route path="reportesd" element={<Reportsd />} />
       </Route>
-      <Route path="registro" element={<Register />} />
-      <Route path="login" element={<Login />} />
+      <Route path="/registro" element={<Register />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 };
