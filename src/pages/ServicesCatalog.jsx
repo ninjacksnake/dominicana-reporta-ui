@@ -70,7 +70,6 @@ const ServicesCatalog = () => {
     <>
       <div className="services-catalog-container">
         <div className="services-catalog-header">
-          <h3 style={{ color: "red", textAlign: "left" }}>Puntos</h3>
           <h2 style={{ textAlign: "center" }}> Reporte de Servicios</h2>
         </div>
         <div className="searchBox-container">
@@ -82,7 +81,6 @@ const ServicesCatalog = () => {
         </div>
       </div>
       <div className="list-container">
-
         <ListComp  data={listData} />
       </div>
     </>
