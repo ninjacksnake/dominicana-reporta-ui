@@ -9,7 +9,7 @@ const Reports = () => {
     <div className="reports-container">
       <div className="header-container">
         <div className="logo-container">
-          <Image alt="Company Logo" src={logo} width={200} />
+          <Image alt="Company Logo" src={logo} width={200} className="logo" />
         </div>
         <div className="header-deading">
           <h2> ESTE REPORTE PERTENECE A:</h2>

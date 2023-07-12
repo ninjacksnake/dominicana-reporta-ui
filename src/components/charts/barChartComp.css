@@ -1,0 +1,12 @@
+.barchart-container{
+    width:30vw;
+    height:30vh;
+}
+
+
+@media (max-width:400px){
+    .barchart-container{
+        width:48vw;
+        height:25vh;
+    }
+}

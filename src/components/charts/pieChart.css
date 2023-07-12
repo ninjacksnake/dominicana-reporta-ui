@@ -1,0 +1,19 @@
+.pieChart-container{
+    width:20vw;
+    height:25vh;
+}
+
+
+
+
+
+
+
+
+@media ( max-width: 400px){
+    .pieChart-container{  
+       
+        width:100vw;
+        height:40vh;
+    }
+}

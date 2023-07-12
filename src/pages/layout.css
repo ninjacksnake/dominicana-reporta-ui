@@ -29,3 +29,14 @@
   background: #555;
 }
 
+@media (max-width: 400px ) {
+  .content-container{
+    margin:5px;
+    width: 375px;
+  }
+ /* .sider{
+  display: none;
+ } */
+
+  
+}

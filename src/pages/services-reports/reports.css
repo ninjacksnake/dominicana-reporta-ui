@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     text-align: center; 
-    min-width: 412px;
+    min-width: 300px;
 }
 
 .header-container{
@@ -18,4 +18,26 @@
 .report-form-container{
     padding:20px;
 
+}
+
+@media (max-width: 400px){
+    .reports-container{
+        padding: 80;
+        font-size: small;
+  
+    }
+
+    
+    .reports-container .logo{
+       width: 60%;     
+    }
+    .reports-container h2{
+       font-size: 3vw;     
+     }
+     .reports-container h3{
+        font-size: 3vw;     
+      }
+    .report-form-container{
+       font-size: small;
+    }
 }

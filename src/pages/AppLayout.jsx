@@ -88,7 +88,7 @@ const AppLayout = () => {
   } = theme.useToken();
   return (
     <Layout style={{ height: "100vh" }}>
-      <Sider trigger={null} collapsible collapsed={collapsed} >
+      <Sider trigger={null} collapsible collapsed={collapsed} className="sider" breakpoint={"lg"} collapsedWidth={0}>
         <UserProfileBox />
         <div className="demo-logo-vertical" />
         <Menu
@@ -106,8 +106,9 @@ const AppLayout = () => {
             onClick={() => setCollapsed(!collapsed)}
             style={{
               fontSize: "16px",
-              width: 64,
-              height: 64,
+              width: 30,
+              height: 40,
+              backgroundColor: "#3377ec"
             }}
           />
         </Header>

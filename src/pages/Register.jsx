@@ -20,7 +20,7 @@ const Register = () => {
              <Image preview={false} alt="Logo de Dominicana Reporta" src={logo} style={ {width:"50%"}}/> 
           </div>
    
-          <h1>Create User</h1>
+          <h1>Crear Usuario</h1>
           <Form
             name="normal_register"
             className="register-form"
