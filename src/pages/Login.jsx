@@ -106,7 +106,7 @@ const failMessage = ()=>{
                 <div className="social-buttons">
                   <Button className="tweeter-button">
                     {" "}
-                    <TwitterSquareFilled style={{ fontSize: "25px" }} /> Tweeter
+                    <TwitterSquareFilled style={{ fontSize: "25px" }} /> Twitter
                   </Button>
                   {contextHolder}
                   <Button className="facebook-button" onClick={failMessage}>

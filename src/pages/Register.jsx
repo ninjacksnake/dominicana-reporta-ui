@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Register = () => {
   const navigate =useNavigate();
   const onFinish = (values) => {
-    navigate('/login')
+    navigate('/registro')
   //  console.log("Received values of form: ", values);
   };
   return (
@@ -78,12 +78,12 @@ const Register = () => {
                 htmlType="submit"
                 className="register-form-button"
               >
-                Iniciar Sesión
+                Guardar
               </Button>
               <Form.Item>
                 <Checkbox style={{textAlign:"justify"}}>
                  <b>
-                  Acepta los <a href="/#" style={{color: "red"}}>terminos y condiciones de servicios</a> y <a href="#" style={{color: "red"}}>  politicas de privacidad</a>
+                  Acepta los <a href="/registro" style={{color: "red"}}>terminos y condiciones de servicios</a> y <a href="/registro" style={{color: "red"}}>  politicas de privacidad</a>
                 </b> 
                 </Checkbox>
                 

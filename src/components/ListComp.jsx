@@ -40,7 +40,7 @@ const servicePicture = {
             <List.Item.Meta
               avatar={<Avatar src={servicePicture[item.picture]} size={50} /> }
               title={<p onClick={()=> navigate(item.link)}><strong>{item.name}</strong></p>}
-              description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+              description=""
            
             />
             <div style={{ marginRight: "100px" }}>

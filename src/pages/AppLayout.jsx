@@ -10,7 +10,7 @@ import {
   ShoppingOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { Layout, Menu, Button, theme } from "antd";
+import { Layout, Menu, Button, theme, message } from "antd";
 import UserProfileBox from "./../components/UserProfileBox";
 import { Outlet, useNavigate } from "react-router-dom";
 
@@ -23,8 +23,22 @@ const user = {
 };
 
 const AppLayout = () => {
+
   const [collapsed, setCollapsed] = useState(true);
   const navigate = useNavigate();
+  
+  const handleNavigate = (route)=>{
+    if (route === "/logout"){
+      message.info("Sesión Finalizada, redirigiendo a Inicio de Sesión")
+      setTimeout(()=>{
+        return  navigate("/login")
+      }, 1600 )
+    
+    }
+    navigate(route);
+    setCollapsed(true);
+  }
+
   const items1 = [
     {
       key: 1,
@@ -32,7 +46,7 @@ const AppLayout = () => {
       children: null,
       label: "Perfil",
       type: null,
-      onClick: () => navigate("/"),
+      onClick: () => handleNavigate("/"),
     },
     {
       key: 2,
@@ -40,7 +54,7 @@ const AppLayout = () => {
       children: null,
       label: "Reportar",
       type: null,
-      onClick: () => navigate("/reportes"),
+      onClick: () => handleNavigate("/reportes"),
     },
     {
       key: 3,
@@ -48,14 +62,14 @@ const AppLayout = () => {
       children: null,
       label: "Indicadores",
       type: null,
-      onClick: () => navigate("/indicadores"),
+      onClick: () => handleNavigate("/indicadores"),
     },
     {
       key: 4,
       icon: <HeartFilled />,
       children: null,
       label: "Puntos",
-      onClick: () => navigate("/puntos"),
+      onClick: () => handleNavigate("/puntos"),
       type: null,
     },
     {
@@ -63,7 +77,7 @@ const AppLayout = () => {
       icon: <ShoppingOutlined />,
       children: null,
       label: "Catálogo de Servicios",
-      onClick: () => navigate("/servicios"),
+      onClick: () => handleNavigate("/servicios"),
       type: null,
     },
     {
@@ -80,6 +94,17 @@ const AppLayout = () => {
       icon: <SettingFilled />,
       children: null,
       label: "Configuración",
+      type: null,
+    },
+    {
+      type: "Divider",
+    },
+    {
+      key: 7,
+      icon: <ShoppingOutlined />,
+      children: null,
+      label: "Cerrar Sesión",
+      onClick: () => handleNavigate("/logout"),
       type: null,
     },
   ];
@@ -101,15 +126,10 @@ const AppLayout = () => {
       <Layout>
         <Header style={{ padding: 0, background: colorBgContainer }}>
           <Button
+          className="menu-toggle-icon"
             type="text"
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: "16px",
-              width: 30,
-              height: 40,
-              backgroundColor: "#3377ec"
-            }}
           />
         </Header>
         <Content

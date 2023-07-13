@@ -1,11 +1,16 @@
-.demo-logo-vertical {
+.menu-toggle-icon {
+  font-size: 16px;
+  width: 40px;
+  height: 55px;
+  background-color: #03193e;
+  color: white;
 }
+
 .content-container {
   margin: 24px 16px;
   padding: 24;
   min-height: 280;
   overflow: auto;
-
 }
 
 /* Width and Height of the scrollbar track */
@@ -29,14 +34,12 @@
   background: #555;
 }
 
-@media (max-width: 400px ) {
-  .content-container{
-    margin:5px;
+@media (max-width: 400px) {
+  .content-container {
+    margin: 5px;
     width: 375px;
   }
- /* .sider{
+  /* .sider{
   display: none;
  } */
-
-  
 }
